@@ -25,6 +25,15 @@
                                 />
                             </div>
                             <div class="mb-3">
+                                <label for="Barcode" class="form-label">Barcode</label>
+                                <input type="text"
+                                class="form-control"
+                                id="Barcode"
+                                name="Barcode"
+                                placeholder="Masukkan Barcode"
+                                />
+                            </div>
+                            <div class="mb-3">
                                 <label for="Harga" class="form-label">Harga</label>
                                 <input type="number"
                                 class="form-control"
