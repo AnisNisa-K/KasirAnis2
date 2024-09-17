@@ -1,4 +1,4 @@
-@extend('layouts.master')
+@extends('layouts.master')
 @section('title', 'produk')
 @section('content')
 
@@ -21,7 +21,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($pelanggan as $pelanggan)
+                                @foreach ($produk as $produk)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $produk->NamaProduk }}</td>
