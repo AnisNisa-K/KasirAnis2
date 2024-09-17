@@ -31,6 +31,7 @@ class ProdukController extends Controller
     {
         Produk::create([
             'NamaProduk' => $request->NamaProduk,
+            'Barcode' => $request->Barcode,
             'Harga' => $request->Harga,
             'Stok' => $request->Stok,
         ]);
@@ -62,6 +63,7 @@ class ProdukController extends Controller
         $produk = Produk::find($id);
         $produk-> update([
             'NamaProduk' => $request->NamaProduk,
+            'Barcode' => $request->Barcode,
             'Harga' => $request->Harga,
             'Stok' => $request->Stok,
         ]);
