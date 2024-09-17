@@ -15,6 +15,7 @@
                             <tr>
                                 <td>ID</td>
                                 <td>Nama Produk</td>
+                                <td>Barcode</td>
                                 <td>Harga</td>
                                 <td>Stok</td>
                                 <td>Aksi</td>
@@ -25,6 +26,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $produk->NamaProduk }}</td>
+                                    <td>{{ $produk->Barcode }}</td>
                                     <td>{{ $produk->Harga}}</td>
                                     <td>{{ $produk->Stok}}</td>
                                     <td><a href="/produk/{{ $produk->id }}/show" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Edit</a>
