@@ -14,5 +14,8 @@ class Penjualan extends Model
         'TotalHarga',
         'PelangganID'
     ];
-
+    public function Pelanggan()
+    {
+        return $this->belongsTo(Pelanggan::class, 'PelangganID', 'id');
+    }
 }
