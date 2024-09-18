@@ -43,11 +43,11 @@
                                 />
                             </div>
                             <div class="mb-3">
-                                <label for="Stok" class="form-label"></label>
+                                <label for="Stok" class="form-label">Stok</label>
                                 <input type="text"
-                                class="form-label"
+                                class="form-control"
                                 id="Stok"
-                                name="Harga"
+                                name="Stok"
                                 placeholder="Masukkan Stok"
                                 />
                             </div>

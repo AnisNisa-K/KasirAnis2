@@ -43,8 +43,8 @@ class PenjualanController extends Controller
      */
     public function show(string $id)
     {
-        $penjualan = Penjualan::find($id);
-        return view('home.penjualan.detail', compact('penjualan'));
+        $penjualan = Penjualan::with('detailpenjualans.produk')->finOrFail(id);
+        return view('penjualan.detail', compact('penjualan'));
     }
 
     /**

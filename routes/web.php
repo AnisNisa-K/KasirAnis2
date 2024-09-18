@@ -31,7 +31,7 @@ Route::get('/pelanggan/{id}/delete', [PelangganController::class, 'destroy']);
 Route::get('/penjualan', [PenjualanController::class, 'index']);
 Route::get('/penjualan/tambah', [PenjualanController::class, 'create']);
 Route::post('/penjualan/simpan', [PenjualanController::class, 'store']);
-Route::get('/penjualan/{id}/show', [PenjualanController::class, 'show']);
+Route::get('/penjualan/{id}/show', [PenjualanController::class, 'show'])->name('penjualan.show');
 Route::post('/penjualan/{id}/update', [PenjualanController::class, 'update']);
 
 // CRUD PRODUK
